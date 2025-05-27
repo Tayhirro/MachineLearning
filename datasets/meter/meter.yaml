@@ -1,0 +1,8 @@
+# datasets/meter/meter.yaml
+path: /home/jiahongyu/Detection/datasets/meter          # 数据根目录
+train: images/train           # 相对 path 的子目录
+val: images/val
+test: images/test             # 可选
+nc: 1                         # 类别数（如果只框窗口）
+names:
+  0: digit_window

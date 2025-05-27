@@ -1,0 +1,14 @@
+
+
+#pre-trained model path
+base_path: /home/jiahongyu/Detection
+
+model_path: train/yolov8n.pt
+data_path: datasets/meter/meter.yaml
+
+
+imgsz: 640
+epochs: 100
+batch: 16
+device: "0,1,2,3"
+freeze: 10

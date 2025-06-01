@@ -6,6 +6,8 @@ H = 296
 W = 400
 df = pd.read_csv(csv_file)
 
+
+
 os.makedirs(lbl_dir, exist_ok=True)
 for _, row in df.iterrows():
     # 归一化
@@ -16,3 +18,4 @@ for _, row in df.iterrows():
 
     txt = f"0 {cx:.6f} {cy:.6f} {w:.6f} {h:.6f}\n"
     (pathlib.Path(lbl_dir) / (pathlib.Path(row.filename).stem + ".txt")).write_text(txt)
+

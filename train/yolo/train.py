@@ -15,7 +15,7 @@ def main():
     configs = os.path.join("../config",args.yaml_name)
     with open(configs, "r") as f:
         cfg = yaml.safe_load(f)
-
+    
     # 1) 加载预训练模型
     model = YOLO(f"{cfg['base_path']}/{cfg['model_path']}")
     # 2) 开始 finetune
